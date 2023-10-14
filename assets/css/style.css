@@ -1,0 +1,113 @@
+body{
+    justify-content: center;
+    align-items: center;
+}
+
+.body{
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-style: solid;
+    height: 680px;
+    width: 325px;
+    justify-self: center;
+    align-self: center;
+    margin-left: 700px;
+    margin-top: 150px;
+    background-color: black;
+
+}
+
+.display-div{
+    display: flexbox;
+}
+
+.answer-display{
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-style: none;
+    height: 100px;
+    width: 280px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: black;
+    position: relative;
+    background-color: white;
+}
+
+.answer-display>span{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.calculation-display{
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-style: none;
+    height: 40px;
+    width: 280px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: gray;
+    position: relative;
+    background-color: white;
+}
+
+.calculation-display>span{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.buttons-div{
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: none;
+    height: 470px;
+    width: 280px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 35px;
+}
+
+.buttons>button{
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+    border-radius: 10px;
+    color: gray;
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+    border-style: none;
+    box-shadow: 0px 2px 5px 2px wheat;
+    font-size: 20px;
+}
+
+#equal-sign{
+    width: 115px;
+    background-color: wheat;
+}
+
+#AC , #backspace , #percentage , #division ,#multiplication , #subtraction , #addition{
+    background-color: wheat;
+}
+button:hover{
+    height: 50.5px;
+    width: 50.5px;
+    box-shadow: 0px 2px 5px 5px lightgrey;
+}
