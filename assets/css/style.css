@@ -1,113 +1,97 @@
 body{
-    justify-content: center;
-    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.body{
-    box-sizing: border-box;
-    border-radius: 20px;
-    border-style: solid;
-    height: 680px;
-    width: 325px;
-    justify-self: center;
-    align-self: center;
-    margin-left: 700px;
-    margin-top: 150px;
-    background-color: black;
+@media (max-width:480px){
+    body{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        height: 100vh;
+    }
 
-}
+    .calculator_container{
+        display: grid;
+        width: 250px;
+        height: 430px;
+        box-sizing: border-box;
+        border-style: solid;
+        border-radius: 10px;
+        justify-content: center;
+        background-color: black;
+        justify-self: center;
+        align-self: center;
+    }
 
-.display-div{
-    display: flexbox;
-}
+    .calculator{
+        display: grid;
+        width: 240px;
+        height: 420px;
+        box-sizing: border-box;
+        border-style: solid;
+        border-radius: 5px;
+        justify-content: center;
+        align-self: center;
+        grid-template-rows: 110px;
+        background-color: black;
+    }
 
-.answer-display{
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-style: none;
-    height: 100px;
-    width: 280px;
-    justify-self: center;
-    align-self: center;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 30px;
-    color: black;
-    position: relative;
-    background-color: white;
-}
+    .display{
+        display: grid;
+        width: 230px;
+        height: 100px;
+        border-style: solid;
+        box-sizing: border-box;
+        border-radius: 10px;
+        text-align: right;
+        grid-template-rows: 70px;
+        justify-content: right;
+        margin-top: 5px;
+        background-color: whitesmoke;
+        font-size: 20px;
+    }
 
-.answer-display>span{
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-}
-.calculation-display{
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-style: none;
-    height: 40px;
-    width: 280px;
-    justify-self: center;
-    align-self: center;
-    margin-top: 0px;
-    margin-left: 20px;
-    font-size: 20px;
-    color: gray;
-    position: relative;
-    background-color: white;
-}
+    .input{
+        display: grid;
+        width: 230px;
+        height: 305px;
+        border-style: solid;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
 
-.calculation-display>span{
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-}
+    .buttons_container{
+        display: grid;
+        grid-template-rows: 60px 60px 60px 60px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    .buttons{
+        display: grid;
+        grid-template-columns: 55px 55px 55px 55px;
+        justify-self: center;
+        justify-content: center;
+    }
 
-.buttons-div{
-    box-sizing: border-box;
-    border-radius: 10px;
-    border-style: none;
-    height: 470px;
-    width: 280px;
-    margin-top: 20px;
-    margin-left: 20px;
-    padding-top: 10px;
-    background-color: white;
-}
+    button{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        border-style: solid;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+    }
 
-.buttons{
-    display: flex;
-    margin-top: 35px;
-}
+    #equal_sign{
+        width: 105px;
+    }
 
-.buttons>button{
-    height: 50px;
-    width: 50px;
-    margin-left: 15px;
-    border-radius: 10px;
-    color: gray;
-    background-color: whitesmoke;
-    border-color: whitesmoke;
-    border-style: none;
-    box-shadow: 0px 2px 5px 2px wheat;
-    font-size: 20px;
-}
+    button:hover{
+        box-shadow: 1px 0px 5px 1px white;
+    }
 
-#equal-sign{
-    width: 115px;
-    background-color: wheat;
-}
-
-#AC , #backspace , #percentage , #division ,#multiplication , #subtraction , #addition{
-    background-color: wheat;
-}
-button:hover{
-    height: 50.5px;
-    width: 50.5px;
-    box-shadow: 0px 2px 5px 5px lightgrey;
 }
