@@ -4,7 +4,8 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media (max-width:480px){
+/* For Small and Big Mobile Phones */
+@media only screen and (max-width: 600px) {
     body{
         display: grid;
         justify-content: center;
@@ -88,6 +89,99 @@ body{
 
     #equal_sign{
         width: 105px;
+    }
+
+    button:hover{
+        box-shadow: 1px 0px 5px 1px white;
+    }
+
+}
+
+/*  For Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        height: 100vh;
+    }
+
+    .calculator_container{
+        display: grid;
+        width: 450px;
+        height: 700px;
+        box-sizing: border-box;
+        border-style: solid;
+        border-radius: 10px;
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
+        background-color: black;
+    }
+
+    .calculator{
+        display: grid;
+        width: 440px;
+        height: 685px;
+        box-sizing: border-box;
+        border-style: solid;
+        border-radius: 5px;
+        justify-content: center;
+        align-self: center;
+        grid-template-rows: 160px;
+        background-color: black;
+    }
+
+    .display{
+        display: grid;
+        width: 430px;
+        height: 150px;
+        border-style: solid;
+        box-sizing: border-box;
+        border-radius: 10px;
+        text-align: right;
+        grid-template-rows: 120px;
+        justify-content: right;
+        margin-top: 5px;
+        font-size: 20px;
+        background-color: whitesmoke;
+    }
+
+    .input{
+        display: grid;
+        width: 430px;
+        height: 515px;
+        border-style: solid;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    .buttons_container{
+        display: grid;
+        grid-template-rows: 105px 105px 105px 105px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    .buttons{
+        display: grid;
+        grid-template-columns: 110px 110px 110px 110px;
+        justify-self: center;
+        justify-content: center;
+    }
+
+    button{
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        border-style: solid;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #equal_sign{
+        width: 190px;
     }
 
     button:hover{
