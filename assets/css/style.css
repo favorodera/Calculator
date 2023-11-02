@@ -2,6 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 
 /* For Small and Big Mobile Phones */
@@ -53,6 +54,11 @@ body{
         margin-top: 5px;
         background-color: whitesmoke;
         font-size: 20px;
+    }
+
+    .display>.question_display{
+        font-size: 20px;
+        font-family: monospace;
     }
 
     .input{
@@ -141,11 +147,16 @@ body{
         box-sizing: border-box;
         border-radius: 10px;
         text-align: right;
-        grid-template-rows: 120px;
+        grid-template-rows: 110px;
         justify-content: right;
         margin-top: 5px;
-        font-size: 20px;
+        font-size: 40px;
         background-color: whitesmoke;
+    }
+
+    .display>.question_display{
+        font-size: 30px;
+        font-family: monospace;
     }
 
     .input{
@@ -175,7 +186,7 @@ body{
         height: 80px;
         border-radius: 10px;
         border-style: solid;
-        font-size: 20px;
+        font-size: 30px;
         justify-content: center;
         align-items: center;
     }
