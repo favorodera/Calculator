@@ -7,6 +7,4 @@ function toggleDarkMode() {
 
     let resultDarkMode = document.getElementById ("result");
     resultDarkMode.style.color = "rgba(255, 255, 255, 1)";
-
-    
 }
