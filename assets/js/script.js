@@ -8,3 +8,14 @@ function toggleDarkMode() {
     let resultDarkMode = document.getElementById ("result");
     resultDarkMode.style.color = "rgba(255, 255, 255, 1)";
 }
+
+function toggleLightMode() {
+    let bodyLightMode = document.body;
+    bodyLightMode.style.backgroundColor = "rgba(241, 242, 243, 1)";
+
+    let containerLightMode = document.getElementById ("projectContainer");
+    containerLightMode.style.backgroundColor ="rgba(241, 242, 243, 1)";
+
+    let resultLightMode = document.getElementById ("result");
+    resultLightMode.style.color = "rgba(0, 0, 0, 1)";
+}
