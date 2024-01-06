@@ -1,202 +1,115 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;;
 }
 
-/* For Small and Big Mobile Phones */
-@media only screen and (max-width: 600px) {
+body{
+
+}
+
+@media only screen and (max-width: 425px) {
+
     body{
-        display: grid;
+        background-color: rgba(241, 242, 243, 1);
+    }
+    .projectContainer{
+        width: 375px;
+        background-color: rgba(241, 242, 243, 1);
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        margin: auto;
+    }
+
+    .toggle{
+        width: 72px;
+        height: 32px;
+        display: flex;
+        gap: 12px;
+        border-radius: 16px;
+        background-color: rgba(255, 255, 255, 1);
+        margin-top: 60px;
+        margin-left: 131px;
         justify-content: center;
         align-items: center;
-        justify-self: center;
-        height: 100vh;
+        
+
+
+        >button{
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            
+
+            >img{
+                height: 24px;
+                width: 24px;
+                border-radius: 50%;
+                
+            }
+        }
     }
 
-    .calculator_container{
-        display: grid;
-        width: 250px;
-        height: 430px;
-        box-sizing: border-box;
-        border-style: solid;
-        border-radius: 10px;
-        justify-content: center;
-        background-color: black;
-        justify-self: center;
-        align-self: center;
+    .content{
+        width: 335px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    
+    
+        >.calculation{
+            color: grey;
+            text-align: right;
+            font-size: 40px;
+            font-weight: 300;
+        }
+    
+        >.result{
+            color: rgba(0, 0, 0, 1);
+            font-size: 96px;
+            text-align: right;
+            font-weight: 300;
+            line-height: 96px;
+        }
+    
+        .row{
+            display: flex;
+            gap: 16px;
+    
+            >button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 32px;
+                color: rgba(0, 0, 0, 1);
+                line-height: 40px;
+                font-weight: 400;
+                text-align: center;
+                height: 72px;
+                width: 72px;
+                border: none;
+                border-radius: 24px;
+                background-color: rgba(255, 255, 255, 1);
+            }
+    
+            >.minorSymbols{
+                background-color: rgba(210, 211, 218, 1);
+            }
+    
+            >.majorSymbols{
+                background-color: rgba(75, 94, 252, 1);
+            }
+        }
     }
-
-    .calculator{
-        display: grid;
-        width: 240px;
-        height: 420px;
-        box-sizing: border-box;
-        border-style: solid;
-        border-radius: 5px;
-        justify-content: center;
-        align-self: center;
-        grid-template-rows: 110px;
-        background-color: black;
-    }
-
-    .display{
-        display: grid;
-        width: 230px;
-        height: 100px;
-        border-style: solid;
-        box-sizing: border-box;
-        border-radius: 10px;
-        text-align: right;
-        grid-template-rows: 70px;
-        justify-content: right;
-        margin-top: 5px;
-        background-color: whitesmoke;
-        font-size: 20px;
-    }
-
-    .display>.question_display{
-        font-size: 20px;
-        font-family: monospace;
-    }
-
-    .input{
-        display: grid;
-        width: 230px;
-        height: 305px;
-        border-style: solid;
-        box-sizing: border-box;
-        border-radius: 5px;
-    }
-
-    .buttons_container{
-        display: grid;
-        grid-template-rows: 60px 60px 60px 60px;
-        padding-top: 5px;
-        padding-left: 5px;
-    }
-    .buttons{
-        display: grid;
-        grid-template-columns: 55px 55px 55px 55px;
-        justify-self: center;
-        justify-content: center;
-    }
-
-    button{
-        width: 50px;
-        height: 50px;
-        border-radius: 10px;
-        border-style: solid;
-        font-size: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #equal_sign{
-        width: 105px;
-    }
-
-    button:hover{
-        box-shadow: 1px 0px 5px 1px white;
-    }
-
+    
 }
 
-/*  For Tablets and Laptops */
-@media only screen and (min-width: 601px) {
-    body{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        justify-self: center;
-        height: 100vh;
-    }
-
-    .calculator_container{
-        display: grid;
-        width: 450px;
-        height: 700px;
-        box-sizing: border-box;
-        border-style: solid;
-        border-radius: 10px;
-        justify-content: center;
-        justify-self: center;
-        align-self: center;
-        background-color: black;
-    }
-
-    .calculator{
-        display: grid;
-        width: 440px;
-        height: 685px;
-        box-sizing: border-box;
-        border-style: solid;
-        border-radius: 5px;
-        justify-content: center;
-        align-self: center;
-        grid-template-rows: 160px;
-        background-color: black;
-    }
-
-    .display{
-        display: grid;
-        width: 430px;
-        height: 150px;
-        border-style: solid;
-        box-sizing: border-box;
-        border-radius: 10px;
-        text-align: right;
-        grid-template-rows: 110px;
-        justify-content: right;
-        margin-top: 5px;
-        font-size: 40px;
-        background-color: whitesmoke;
-    }
-
-    .display>.question_display{
-        font-size: 30px;
-        font-family: monospace;
-    }
-
-    .input{
-        display: grid;
-        width: 430px;
-        height: 515px;
-        border-style: solid;
-        box-sizing: border-box;
-        border-radius: 5px;
-    }
-
-    .buttons_container{
-        display: grid;
-        grid-template-rows: 105px 105px 105px 105px;
-        padding-top: 5px;
-        padding-left: 5px;
-    }
-    .buttons{
-        display: grid;
-        grid-template-columns: 110px 110px 110px 110px;
-        justify-self: center;
-        justify-content: center;
-    }
-
-    button{
-        width: 80px;
-        height: 80px;
-        border-radius: 10px;
-        border-style: solid;
-        font-size: 30px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #equal_sign{
-        width: 190px;
-    }
-
-    button:hover{
-        box-shadow: 1px 0px 5px 1px white;
-    }
-
-}

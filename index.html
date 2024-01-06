@@ -3,59 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
 </head>
 <body>
 
-    <div class="calculator_container">
 
-        <div class="calculator">
-            <div class="display">
-                <div class="answer_display">1,000,000,000,000</div>
-                <div class="question_display">200+200</div>
-            </div>
+  <div class="projectContainer" id="projectContainer">
 
-            <div class="input">
-                <div class="buttons_container">
-                        <div class="buttons">
-                            <button id="AC">AC</button>
-                            <button id="backspace">⌫</button>
-                            <button id="percentage">%</button>
-                            <button id="division">÷</button>
-                        </div>
-            
-                        <div class="buttons">
-                            <button>7</button>
-                            <button>8</button>
-                            <button>9</button>
-                            <button id="multiplication">×</button>
-                        </div>  
-                        
-                        <div class="buttons">
-                            <button>4</button>
-                            <button>5</button>
-                            <button>6</button>
-                            <button id="subtraction">-</button>
-                        </div> 
-            
-                        <div class="buttons">
-                            <button>1</button>
-                            <button>2</button>
-                            <button>3</button>
-                            <button id="addition">+</button>
-                        </div> 
-            
-                        <div class="buttons">
-                            <button>0</button>
-                            <button>.</button>
-                            <button id="equal_sign">=</button>
-                        </div> 
-                </div>
-            </div>
+    <div class="toggle">
+        <button onclick=""><img src="./assets/icons/sun.jpg" alt=""></button>
+        <button onclick="toggleDarkMode()"><img src="./assets/icons/moon.png" alt=""></button>
+    </div>
+
+    <section class="content">
+
+        <div class="calculation" id="calculation">6291 ÷ 5</div>
+        <div class="result" id="result">1,258.2</div>
+
+        <div class="row">
+            <button class="minorSymbols">C</button>
+            <button class="minorSymbols"><sup>+</sup>/<sub>-</sub></button>
+            <button class="minorSymbols">&percnt;</button>
+            <button class="majorSymbols">&divide;</button>
         </div>
 
-    </div>
+        <div class="row">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="majorSymbols">&times;</button>
+        </div>
+
+        <div class="row">
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="majorSymbols">&minus;</button>
+        </div>
+
+        <div class="row">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="majorSymbols">&plus;</button>
+        </div>
+
+        <div class="row">
+            <button>.</button>
+            <button>0</button>
+            <button>&#x232B;</button>
+            <button>&equals;</button>
+        </div>
+    </section>
+
+  </div>  
+
+
 </body>
 <script src="./assets/js/script.js"></script>
 </html>
