@@ -19,3 +19,12 @@ function toggleLightMode() {
     let resultLightMode = document.getElementById ("result");
     resultLightMode.style.color = "rgba(0, 0, 0, 1)";
 }
+
+function clearDisplay() {
+    document.getElementById('calculation').innerHTML= '0'
+    document.getElementById('result').innerHTML='0'
+}
+
+function addToCalculation(value) {
+    document.getElementById('calculation').innerHTML
+}
